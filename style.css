@@ -1,0 +1,102 @@
+/*
+	Theme colors: 
+	#F3F7F6 white
+	#A4A7AE light grey
+	#FF4200 bright orange
+	#B16553 muted orange 
+	#2C2D36 dark grey
+*/
+
+	/*Flexbox fullscreen header*/
+header {
+	background-color: #2C2D36;
+	height: 100vh;
+	color: #F3F7F6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 48px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 10px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: right;
+}
+
+	/*Adjusts alignment of text in header. */
+h1, h3 {
+	margin: 0 auto;
+}
+
+
+img {
+	width: 500px;
+	border-radius: 120px;
+}
+
+	/*Positioning and alignment of main section elements*/
+article {
+	width: 600px;
+	margin: 0 auto;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 3px;
+}
+
+p, li {
+	line-height: 1.6;
+	font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+	width: 800px;
+    border: 0;
+    height: 1px;
+    background: #F66A39;
+    background-image: linear-gradient(to right, #fff, #F66A39, #fff);
+}
+
+ul, ol{
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+	/*Link styling below*/
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #F66A39;
+}
+
+a:visited {
+	color: #B16553;
+}
+
+a:hover {
+	color: #FF4200;
+}
+
+a:active {
+	color: #A4A7AE;
+}
+
+footer {
+	background-color: #2C2D36;
+	padding: 20px 0;
+	margin: 0;
+}
+
+footer > p {
+	color: #F3F7F6;
+	padding-left: 20px;
+}
