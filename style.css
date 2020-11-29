@@ -1,19 +1,19 @@
 /*
 	Theme colors: 
 	#F3F7F6 white
-	#A4A7AE light grey
+	#A4A7AE light gray
 	#FF4200 bright orange
 	#B16553 muted orange 
-	#2C2D36 dark grey
+	#2C2D36 dark gray
 */
 
 	/*Flexbox fullscreen header*/
 header {
-	background-color: #2C2D36;
+	background-image: linear-gradient(to right, #000, #2C2D36);
 	height: 100vh;
 	color: #F3F7F6;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -31,12 +31,14 @@ h3 {
 	/*Adjusts alignment of text in header. */
 h1, h3 {
 	margin: 0 auto;
+	padding-left: 150px;
 }
 
 
 img {
-	width: 500px;
-	border-radius: 120px;
+	height: 100vh;
+	filter: grayscale(20%);
+	opacity: 0.4;
 }
 
 	/*Positioning and alignment of main section elements*/
@@ -69,25 +71,29 @@ ul, ol{
 	list-style-position: outside;
 }
 
-	/*Link styling below*/
+	/*Pseudo-class link styling below*/
 a {
 	text-decoration: none;
 }
 
+	/*Unvisited link*/
 a:link {
-	color: #F66A39;
+	color: #FF4200;
 }
 
+	/*Visited link*/
 a:visited {
 	color: #B16553;
 }
 
+	/*Mouse over link*/
 a:hover {
-	color: #FF4200;
+	color: #A4A7AE;
 }
 
+	/*Selected link*/
 a:active {
-	color: #A4A7AE;
+	color: #2C2D36;
 }
 
 footer {
