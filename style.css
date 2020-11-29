@@ -9,7 +9,7 @@
 
 	/*Flexbox fullscreen header*/
 header {
-	background-image: linear-gradient(to right, #000, #2C2D36);
+	background: linear-gradient(to right, #000, #2C2D36);
 	height: 100vh;
 	color: #F3F7F6;
 	display: flex;
