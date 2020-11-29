@@ -7,7 +7,8 @@
 	#2C2D36 dark gray
 */
 
-	/*Flexbox fullscreen header*/
+	/* Header */
+
 header {
 	background: linear-gradient(to right, #000, #2C2D36);
 	height: 100vh;
@@ -28,22 +29,30 @@ h3 {
 	text-align: right;
 }
 
-	/*Adjusts alignment of text in header. */
+
 h1, h3 {
 	margin: 0 auto;
 	padding-left: 150px;
 }
 
+	/* Images / Header and Article Section */
 
 img {
+	width: 100%;
+}
+
+.header-img {
+	width: auto;
 	height: 100vh;
 	filter: grayscale(20%);
 	opacity: 0.4;
 }
 
-	/*Positioning and alignment of main section elements*/
+
+	/* Main Section */
+
 article {
-	width: 600px;
+	/*width: 600px;*/
 	margin: 0 auto;
 }
 
@@ -71,30 +80,66 @@ ul, ol{
 	list-style-position: outside;
 }
 
-	/*Pseudo-class link styling below*/
 a {
 	text-decoration: none;
 }
 
-	/*Unvisited link*/
+	/* Unvisited link */
 a:link {
 	color: #FF4200;
 }
 
-	/*Visited link*/
+	/* Visited link */
 a:visited {
 	color: #B16553;
 }
 
-	/*Mouse over link*/
+	/* Mouse over link */
 a:hover {
 	color: #A4A7AE;
 }
 
-	/*Selected link*/
+	/* Selected link */
 a:active {
 	color: #2C2D36;
 }
+
+	/* Group & Item / Mobile First */
+
+.group {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	flex: 1;
+	margin: 10px;
+}
+
+.item-double {
+	flex: 2;
+	margin: 10px;
+}
+
+.item-tripple {
+	flex: 3;
+	margin: 10px;
+}
+
+	/* Group & Items / Desktop */
+
+@media all and (min-width: 800px) {
+	.wrapper {
+		width: 80%;
+		margin: auto;
+	}
+
+	.group {
+		flex-direction: row;
+	}
+}
+
+	/* Footer */
 
 footer {
 	background-color: #2C2D36;
