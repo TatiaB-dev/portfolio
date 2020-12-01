@@ -62,6 +62,7 @@ h2 {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 3px;
 	color: rgba(0,0,0,0.2);
+	padding: 0 10px;
 }
 
 p, li {
@@ -74,7 +75,7 @@ p {
 }
 
 hr {
-	width: 800px;
+	width: 90%;
     border: 0;
     height: 1px;
     background: #344B8F;
@@ -118,23 +119,23 @@ a {
 }
 
 	/* Unvisited link */
-#item ul li a:link {
-	color: #7180ee;
+div ul li a:link, a[href^="mailto:"]:link, p a:link {
+	color: #2981C9;
 }
 
 	/* Visited link */
-#item ul li a:visited {
-	color: #A09CCF;
+div ul li a:visited, a[href^="mailto:"]:visited, p a:visited {
+	color: #2830c9;
 }
 
 	/* Mouse over link */
-#item ul li a:hover {
-	color: #edde71;
+div ul li a:hover, a[href^="mailto:"]:hover, p a:hover {
+	color: #28c9c1;
 }
 
 	/* Selected link */
-#item ul li a:active {
-	color: #f6eeb5;
+div ul li a:active, a[href^="mailto:"]:active, p a:active {
+	color: #344B8F;
 }
 
 	/* Contact Form Styling */
